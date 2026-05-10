@@ -11,7 +11,7 @@
 ## Посилання
 
 - **Figma-макет:** https://www.figma.com/design/2Tj16H7IO7dq1ViTvIh57V/Flora?node-id=8203-59903
-- **Жива сторінка (GitHub Pages):** [_додати після деплою_](https://kolomiiets-taras.github.io/UMT-markup-practice_P1-Kolomiiets-Taras/)
+- **Жива сторінка (GitHub Pages):** https://kolomiiets-taras.github.io/UMT-markup-practice_P1-Kolomiiets-Taras/
 
 ## Локальний запуск
 
