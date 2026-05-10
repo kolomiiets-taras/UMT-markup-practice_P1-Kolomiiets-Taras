@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+.idea/
+.vscode/
+*.log
+.env
+.env.local
+dist/
+
+# Working materials, not needed in repo
+design/
+TASK.md

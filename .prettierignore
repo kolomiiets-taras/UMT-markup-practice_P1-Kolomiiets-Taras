@@ -1,0 +1,4 @@
+node_modules/
+images/
+*.min.js
+*.min.css

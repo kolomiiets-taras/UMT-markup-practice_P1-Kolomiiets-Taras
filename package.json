@@ -1,0 +1,14 @@
+{
+  "name": "flora-frontend",
+  "version": "1.0.0",
+  "description": "Flora — UMT навчальний проєкт. Скоуп 1: HTML/CSS верстка за Figma-макетом.",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,json,md}\"",
+    "json-server": "json-server --watch db.json --port 3000"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
