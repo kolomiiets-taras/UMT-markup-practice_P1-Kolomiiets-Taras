@@ -29,8 +29,8 @@
     <circle cx="12" cy="10" r="3" />
   </symbol>
 
-  <symbol id="icon-facebook" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
+  <symbol id="icon-facebook" viewBox="0 0 32 32" fill="currentColor">
+    <path d="M29.333 16.405c0-7.409-5.969-13.415-13.333-13.415s-13.333 6.005-13.333 13.413c0 6.697 4.876 12.247 11.251 13.253v-9.373h-3.387v-3.88h3.387v-2.955c0-3.361 1.989-5.219 5.036-5.219 1.459 0 2.984 0.261 2.984 0.261v3.301h-1.68c-1.657 0-2.173 1.035-2.173 2.096v2.516h3.697l-0.591 3.877h-3.107v9.373c6.373-1.005 11.249-6.555 11.249-13.251z" />
   </symbol>
 
   <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

@@ -14,6 +14,7 @@
   --color-yellow: #e8e81c;
   --color-green: #42ed13;
   --color-green-deep: #1a5e07;
+  --color-green-light: #D9FBCF;
   --color-error: #af0000;
 
   --gradient-primary: linear-gradient(101.67deg, #e8e81c 0%, #42ed13 100%);
@@ -171,6 +172,7 @@ button {
 @media (min-width: 768px) {
   :root {
     --container-pad: 32px;
+    --container-max: 704px;
   }
   .section-title {
     font-size: 44px;
@@ -180,6 +182,7 @@ button {
 @media (min-width: 1440px) {
   :root {
     --container-pad: 52px;
+    --container-max: 1336px;
   }
   .section-title {
     font-size: 56px;
@@ -367,7 +370,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right center;
+  object-position: 53% 50%;
 }
 
 .hero__media::after {
@@ -376,15 +379,15 @@ button {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.92) 0%,
-    rgba(255, 255, 255, 0.78) 60%,
-    rgba(255, 255, 255, 0.55) 100%
+    rgba(255, 255, 255, 0.65) 0%,
+    rgba(255, 255, 255, 0.45) 60%,
+    rgba(255, 255, 255, 0.25) 100%
   );
 }
 
 .hero__inner {
   padding-block: 32px 48px;
-  min-height: 360px;
+  min-height: 510px;
   display: flex;
   align-items: center;
 }
@@ -405,6 +408,9 @@ button {
 @media (min-width: 768px) {
   .hero {
     margin-bottom: 48px;
+  }
+  .hero__media img {
+    object-position: right center;
   }
   .hero__media::after {
     background: linear-gradient(
@@ -546,6 +552,12 @@ button {
   .bestsellers__list {
     grid-template-columns: repeat(2, 1fr);
   }
+  .bestsellers__list .product-card {
+    max-width: none;
+  }
+  .bestsellers__list .product-card__media {
+    aspect-ratio: 1 / 1;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -627,6 +639,26 @@ button {
   font-size: 24px;
 }
 
+.bestsellers__list .product-card__title,
+.bestsellers__list .product-card__desc,
+.bestsellers__list .product-card__price {
+  text-align: center;
+}
+
+.bestsellers__list .product-card__desc {
+  margin-inline: auto;
+}
+
+.bestsellers__list .product-card {
+  max-width: 335px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.bestsellers__list .product-card__media {
+  aspect-ratio: 335 / 320;
+}
+
 /* ==========================================================================
    Bouquets grid
    ========================================================================== */
@@ -639,6 +671,16 @@ button {
   gap: 24px;
   grid-template-columns: 1fr;
   margin-bottom: 32px;
+}
+
+.bouquets__grid .product-card {
+  max-width: 335px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.bouquets__grid .product-card__media {
+  aspect-ratio: 335 / 296;
 }
 
 .bouquets__more {
@@ -656,6 +698,12 @@ button {
   }
   .bouquets__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .bouquets__grid .product-card {
+    max-width: none;
+  }
+  .bouquets__grid .product-card__media {
+    aspect-ratio: 1 / 1;
   }
 }
 
@@ -716,7 +764,7 @@ button {
 
 .arrow:hover,
 .arrow:focus-visible {
-  background: var(--gradient-primary);
+  background: var(--color-green-light);
   border-color: transparent;
   color: var(--color-text);
 }
@@ -931,12 +979,17 @@ p.contact-item__value {
   gap: 24px;
 }
 
+.socials__link svg {
+  width: 24px;
+  height: 24px;
+}
+
 .socials__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   color: var(--color-text);
   border-radius: 50%;
   transition:
@@ -962,6 +1015,18 @@ p.contact-item__value {
   .site-footer {
     padding-block: 56px 24px;
   }
+  .site-footer__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .socials {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
   .site-footer__inner {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
@@ -976,12 +1041,6 @@ p.contact-item__value {
   .site-footer__nav {
     grid-area: nav;
   }
-  .site-footer__list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-  }
   .socials {
     grid-area: socials;
   }
@@ -990,9 +1049,6 @@ p.contact-item__value {
     text-align: center;
     margin-top: 8px;
   }
-}
-
-@media (min-width: 1440px) {
   .site-footer {
     margin-top: 96px;
     padding-block: 64px 32px;
