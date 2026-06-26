@@ -1,0 +1,207 @@
+{
+  "bouquets": [
+    {
+      "id": 1,
+      "name": "Peach Meadow",
+      "price": 55,
+      "description": "A soft and radiant arrangement of peach and blush roses with lush greenery in a straw basket — light and natural.",
+      "category": "garden",
+      "photo": "images/bq-peach-meadow.jpg",
+      "photo2x": "images/bq-peach-meadow@2x.jpg",
+      "alt": "Peach and blush rose arrangement in a straw basket"
+    },
+    {
+      "id": 2,
+      "name": "Blush Romance",
+      "price": 34,
+      "description": "A premium bouquet of deep pink and ivory roses, complemented by silver eucalyptus — sophisticated and intimate.",
+      "category": "romantic",
+      "photo": "images/bq-blush-romance.jpg",
+      "photo2x": "images/bq-blush-romance@2x.jpg",
+      "alt": "Pink and ivory bouquet of deep roses"
+    },
+    {
+      "id": 3,
+      "name": "Pastel Garden",
+      "price": 40,
+      "description": "A pastel-toned mix of spray roses and greenery in a woven basket — gentle, airy, and perfect for any occasion.",
+      "category": "garden",
+      "photo": "images/bq-pastel-garden.jpg",
+      "photo2x": "images/bq-pastel-garden@2x.jpg",
+      "alt": "Pastel-toned spray rose mix in a wicker basket"
+    },
+    {
+      "id": 4,
+      "name": "Tulip Charm",
+      "price": 61,
+      "description": "A vivid bouquet of bright tulips and roses in a lavender box — cheerful and full of charm.",
+      "category": "bright",
+      "photo": "images/bq-tulip-charm.jpg",
+      "photo2x": "images/bq-tulip-charm@2x.jpg",
+      "alt": "Vivid bouquet of tulips and roses in a lavender box"
+    },
+    {
+      "id": 5,
+      "name": "Berry Bloom",
+      "price": 32,
+      "description": "A lush mix of rich pink, purple, and cream blooms with textured greens — romantic and elegant.",
+      "category": "romantic",
+      "photo": "images/bq-berry-bloom.jpg",
+      "photo2x": "images/bq-berry-bloom@2x.jpg",
+      "alt": "A lush mix of pink and purple blooms with red textured greens"
+    },
+    {
+      "id": 6,
+      "name": "Sweet Whisper",
+      "price": 40,
+      "description": "A charming spring bouquet with peonies, roses, and lilac-toned accents — fresh, lively, and expressive.",
+      "category": "garden",
+      "photo": "images/bq-sweet-whisper.jpg",
+      "photo2x": "images/bq-sweet-whisper@2x.jpg",
+      "alt": "A spring bouquet with peonies, roses, and lilac accents"
+    },
+    {
+      "id": 7,
+      "name": "Field Joy",
+      "price": 49,
+      "description": "A rustic hand-tied bouquet of sunflowers, lisianthus, and daisies — perfect for brightening the day.",
+      "category": "bright",
+      "photo": "images/bq-field-joy.jpg",
+      "photo2x": "images/bq-field-joy@2x.jpg",
+      "alt": "A rustic hand-tied bouquet of sunflowers and daisies"
+    },
+    {
+      "id": 8,
+      "name": "Soft Bloom",
+      "price": 37,
+      "description": "A delicate bouquet of pink carnations and roses wrapped in satin paper — soft, stylish, and versatile.",
+      "category": "romantic",
+      "photo": "images/bq-soft-bloom.jpg",
+      "photo2x": "images/bq-soft-bloom@2x.jpg",
+      "alt": "Pink carnations and roses wrapped in satin paper"
+    },
+    {
+      "id": 9,
+      "name": "Garden Whisper",
+      "price": 42,
+      "description": "Cottage-style mix of garden roses, hydrangea, and trailing greens — timeless and serene.",
+      "category": "garden",
+      "photo": "images/bq-pastel-garden.jpg",
+      "photo2x": "images/bq-pastel-garden@2x.jpg",
+      "alt": "Garden roses and hydrangea bouquet"
+    },
+    {
+      "id": 10,
+      "name": "Sunny Daisy",
+      "price": 28,
+      "description": "Cheerful daisies and craspedia tied with kraft paper — sunny, easy, and budget-friendly.",
+      "category": "bright",
+      "photo": "images/bq-field-joy.jpg",
+      "photo2x": "images/bq-field-joy@2x.jpg",
+      "alt": "Daisies and craspedia in kraft paper wrap"
+    },
+    {
+      "id": 11,
+      "name": "Rose Velvet",
+      "price": 58,
+      "description": "Deep crimson roses with velvet ribbon — bold romantic statement for special occasions.",
+      "category": "romantic",
+      "photo": "images/bq-blush-romance.jpg",
+      "photo2x": "images/bq-blush-romance@2x.jpg",
+      "alt": "Deep crimson velvet roses bouquet"
+    },
+    {
+      "id": 12,
+      "name": "Spring Burst",
+      "price": 36,
+      "description": "Bright spring mix of tulips, ranunculus, and freesia — fresh seasonal blooms in vivid colors.",
+      "category": "bright",
+      "photo": "images/bq-tulip-charm.jpg",
+      "photo2x": "images/bq-tulip-charm@2x.jpg",
+      "alt": "Bright tulips, ranunculus and freesia spring mix"
+    }
+  ],
+  "topSellers": [
+    {
+      "id": 1,
+      "name": "Spring Elegance",
+      "price": 35,
+      "description": "A delicate blend of peonies, tulips, and roses — perfect for springtime gifting and bright smiles.",
+      "photo": "images/top-spring-elegance.jpg",
+      "photo2x": "images/top-spring-elegance@2x.jpg",
+      "alt": "Pink peony and rose bouquet on dark blue background"
+    },
+    {
+      "id": 2,
+      "name": "Berry Chic",
+      "price": 40,
+      "description": "A stylish composition of roses, seasonal greenery, and vibrant berries — a bold and elegant floral statement.",
+      "photo": "images/top-berry-chic.jpg",
+      "photo2x": "images/top-berry-chic@2x.jpg",
+      "alt": "A composition of roses and seasonal greenery"
+    },
+    {
+      "id": 3,
+      "name": "Lavender Dream",
+      "price": 55,
+      "description": "A rich bouquet with lavender, lisianthus, and roses — ideal for those who love deep hues and gentle fragrance.",
+      "photo": "images/top-lavender-dream.jpg",
+      "photo2x": "images/top-lavender-dream@2x.jpg",
+      "alt": "A bouquet with lavender, lisianthus, and roses"
+    },
+    {
+      "id": 4,
+      "name": "Peach Meadow",
+      "price": 55,
+      "description": "A soft and radiant arrangement of peach and blush roses with lush greenery in a straw basket — light and natural.",
+      "photo": "images/bq-peach-meadow.jpg",
+      "photo2x": "images/bq-peach-meadow@2x.jpg",
+      "alt": "Peach and blush rose arrangement"
+    },
+    {
+      "id": 5,
+      "name": "Tulip Charm",
+      "price": 61,
+      "description": "A vivid bouquet of bright tulips and roses in a lavender box — cheerful and full of charm.",
+      "photo": "images/bq-tulip-charm.jpg",
+      "photo2x": "images/bq-tulip-charm@2x.jpg",
+      "alt": "Vivid bouquet of tulips and roses in a lavender box"
+    },
+    {
+      "id": 6,
+      "name": "Field Joy",
+      "price": 49,
+      "description": "A rustic hand-tied bouquet of sunflowers, lisianthus, and daisies — perfect for brightening the day.",
+      "photo": "images/bq-field-joy.jpg",
+      "photo2x": "images/bq-field-joy@2x.jpg",
+      "alt": "A rustic hand-tied bouquet of sunflowers and daisies"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "quote": "Flora made my anniversary unforgettable with their beautiful arrangement!",
+      "author": "Emma T."
+    },
+    {
+      "id": 2,
+      "quote": "Absolutely stunning bouquet! It looked even better than the photo and arrived right on time.",
+      "author": "Daniel R."
+    },
+    {
+      "id": 3,
+      "quote": "The service was exceptional, and the flowers were fresh!",
+      "author": "Olivia M."
+    },
+    {
+      "id": 4,
+      "quote": "I keep coming back — every bouquet feels like a tiny piece of art.",
+      "author": "Sophie L."
+    },
+    {
+      "id": 5,
+      "quote": "Their seasonal arrangements always impress my mom on her birthday.",
+      "author": "Marcus K."
+    }
+  ]
+}

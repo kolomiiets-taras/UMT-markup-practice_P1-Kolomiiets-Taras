@@ -15,13 +15,24 @@
 
 ## Локальний запуск
 
-Достатньо відкрити `index.html` у браузері. Або підняти будь-який статичний сервер:
+**1. Статичний сервер для фронтенду:**
 
 ```bash
 npx serve .
 # або
-python3 -m http.server 8000
+python3 -m http.server 5500
 ```
+
+**2. Mock API (json-server) — потрібен для динамічних списків (скоуп 2):**
+
+```bash
+npx json-server --watch db.json --port 3001
+# або
+npm run json-server
+```
+
+API стартує на `http://localhost:3001`. `js/api.js` ходить туди за `/bouquets`, `/topSellers`, `/testimonials`.
+Без json-server сторінка показує fallback-повідомлення про помилку у списках, решта верстки працює.
 
 ## Інструменти розробки
 
