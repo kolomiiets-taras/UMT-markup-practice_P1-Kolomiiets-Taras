@@ -11,34 +11,38 @@
     const sizes = modifier === 'tall'
       ? { w: 432, h: 432 }
       : { w: 320, h: 320 };
+    const name = item.name || item.title || '';
+    const photo = item.photo || item.photoURL || '';
+    const photo2x = item.photo2x || photo;
+    const alt = item.alt || name;
     return `
       <li>
         <article
           class="product-card${modifier ? ` product-card--${modifier}` : ''}"
           data-id="${item.id}"
           data-modal-open="product"
-          data-bouquet="${escape(item.name)}"
+          data-bouquet="${escape(name)}"
           data-price="${item.price}"
-          data-desc="${escape(item.description)}"
-          data-photo="${escape(item.photo)}"
-          data-photo2x="${escape(item.photo2x || item.photo)}"
-          data-alt="${escape(item.alt || item.name)}"
+          data-desc="${escape(item.description || '')}"
+          data-photo="${escape(photo)}"
+          data-photo2x="${escape(photo2x)}"
+          data-alt="${escape(alt)}"
           role="button"
           tabindex="0"
-          aria-label="View ${escape(item.name)} details"
+          aria-label="View ${escape(name)} details"
         >
           <div class="product-card__media">
             <img
-              src="${escape(item.photo)}"
-              srcset="${escape(item.photo)} 1x, ${escape(item.photo2x || item.photo)} 2x"
-              alt="${escape(item.alt || item.name)}"
+              src="${escape(photo)}"
+              srcset="${escape(photo)} 1x, ${escape(photo2x)} 2x"
+              alt="${escape(alt)}"
               width="${sizes.w}"
               height="${sizes.h}"
               loading="lazy"
               decoding="async">
           </div>
-          <h3 class="product-card__title">${escape(item.name)}</h3>
-          <p class="product-card__desc">${escape(item.description)}</p>
+          <h3 class="product-card__title">${escape(name)}</h3>
+          <p class="product-card__desc">${escape(item.description || '')}</p>
           <p class="product-card__price">$${item.price}</p>
         </article>
       </li>`;
