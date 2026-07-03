@@ -91,16 +91,35 @@
     });
   }
 
-  function handleOrder(form) {
-    Object.fromEntries(new FormData(form).entries());
-    form.reset();
-    const modal = form.closest('.modal');
-    if (modal) {
-      modal.classList.remove('is-open');
-      modal.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('is-locked');
+  async function handleOrder(form) {
+    const submit = form.querySelector('button[type="submit"]');
+    const payload = Object.fromEntries(new FormData(form).entries());
+    const qtyEl = document.querySelector('#product-modal [data-qty-value]');
+    if (qtyEl) payload.quantity = Number(qtyEl.textContent) || 1;
+    const bouquetEl = document.querySelector('#order-modal [data-order-bouquet]');
+    if (bouquetEl && !bouquetEl.hidden) {
+      const raw = bouquetEl.textContent.replace(/^Bouquet:\s*/, '').split('×')[0].trim();
+      if (raw) payload.bouquet = raw;
     }
-    showToast('Thanks! We will contact you shortly.');
+
+    if (submit) submit.disabled = true;
+    try {
+      await window.FloraApi.createOrder(payload);
+      form.reset();
+      const modal = form.closest('.modal');
+      if (modal) {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('is-locked');
+      }
+      showToast('Thanks! We will contact you shortly.');
+    } catch (err) {
+      const message = (err && err.response && err.response.data && err.response.data.message)
+        || 'Could not submit order. Please try again.';
+      showToast(message);
+    } finally {
+      if (submit) submit.disabled = false;
+    }
   }
 
 

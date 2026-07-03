@@ -16,7 +16,8 @@
       base: window.FLORA_API || 'http://localhost:3000/api',
       bouquets: '/bouquets',
       topSellers: '/bouquets?favorite=true&limit=6',
-      testimonials: null,
+      testimonials: '/testimonials',
+      orders: '/orders',
     },
   };
 
@@ -47,18 +48,16 @@
     return data;
   }
 
-  const STATIC_TESTIMONIALS = [
-    { id: 1, quote: 'Flora made my anniversary unforgettable with their beautiful arrangement!', author: 'Emma T.' },
-    { id: 2, quote: 'Absolutely stunning bouquet! It looked even better than the photo and arrived right on time.', author: 'Daniel R.' },
-    { id: 3, quote: 'The service was exceptional, and the flowers were fresh!', author: 'Olivia M.' },
-    { id: 4, quote: 'I keep coming back — every bouquet feels like a tiny piece of art.', author: 'Sophie L.' },
-    { id: 5, quote: 'Their seasonal arrangements always impress my mom on her birthday.', author: 'Marcus K.' },
-  ];
-
   async function getTestimonials() {
-    if (!cfg.testimonials) return STATIC_TESTIMONIALS;
     if (!client) throw new Error('axios is not loaded');
     const { data } = await client.get(cfg.testimonials);
+    return data;
+  }
+
+  async function createOrder(payload) {
+    if (!client) throw new Error('axios is not loaded');
+    if (!cfg.orders) throw new Error('Orders endpoint is not available in this mode');
+    const { data } = await client.post(cfg.orders, payload);
     return data;
   }
 
@@ -67,5 +66,6 @@
     getBouquets,
     getTopSellers,
     getTestimonials,
+    createOrder,
   };
 })();
